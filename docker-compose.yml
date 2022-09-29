@@ -1,0 +1,11 @@
+version: "2"
+​
+services:
+​
+  web:
+    build: .
+    restart: always
+    ports:
+      - "0.0.0.0:14100:80"
+    environment:
+      - FLAG=HNUCTF{th1s_1s_4n_ezpop}
